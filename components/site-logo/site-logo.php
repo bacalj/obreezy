@@ -1,0 +1,1 @@
+<?php obreezy_the_site_logo(); ?>
