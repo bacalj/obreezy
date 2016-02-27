@@ -7,8 +7,7 @@
   background-color: #bbb;
 }
 
-h1.site-title,
-div#comments {
+h1.site-title {
   margin: 0 auto;
   width: $size__site-width;
 }
@@ -38,4 +37,11 @@ div#comments {
     text-align: right;
     color:#ccc;
   }
+}
+
+#comments {
+  border-top: 2px solid silver;
+  margin-top: 20px;
+  padding-top:20px;
+  background-color:#ddd;
 }

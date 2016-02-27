@@ -1,4 +1,4 @@
-<h2 class="comments-title">
+<h4 class="comments-title">
 	<?php
 		printf( // WPCS: XSS OK.
 			esc_html( _nx( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'obreezy' ) ),
@@ -6,4 +6,4 @@
 			'<span>' . get_the_title() . '</span>'
 		);
 	?>
-</h2>
+</h4>

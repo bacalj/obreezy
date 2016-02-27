@@ -977,8 +977,7 @@ body.admin-bar button.menu-toggle {
 .site-header {
   background-color: #bbb; }
 
-h1.site-title,
-div#comments {
+h1.site-title {
   margin: 0 auto;
   width: 90%; }
 
@@ -1002,6 +1001,12 @@ div#comments {
     width: 90%;
     text-align: right;
     color: #ccc; }
+
+#comments {
+  border-top: 2px solid silver;
+  margin-top: 20px;
+  padding-top: 20px;
+  background-color: #ddd; }
 
 /*--------------------------------------------------------------
 # Content

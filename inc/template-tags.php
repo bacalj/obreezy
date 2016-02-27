@@ -59,11 +59,11 @@ function obreezy_entry_footer() {
 		}
 	}
 
-	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-		echo '<span class="comments-link">';
-		comments_popup_link( esc_html__( 'Leave a comment', 'obreezy' ), esc_html__( '1 Comment', 'obreezy' ), esc_html__( '% Comments', 'obreezy' ) );
-		echo '</span>';
-	}
+	// if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
+	// 	echo '<span class="comments-link">';
+	// 	comments_popup_link( esc_html__( 'Leave a comment', 'obreezy' ), esc_html__( '1 Comment', 'obreezy' ), esc_html__( '% Comments', 'obreezy' ) );
+	// 	echo '</span>';
+	// }
 
 	//edit_post_link( esc_html__( 'Edit', 'obreezy' ), '<span class="edit-link">', '</span>' );
 }
