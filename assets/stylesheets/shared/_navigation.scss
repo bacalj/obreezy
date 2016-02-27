@@ -40,13 +40,28 @@ a {
   & .nav-previous {
     float: left;
     width: 50%;
+    margin-left:7%;
+    &:before {
+      content:'← ';
+    }
   }
 
   & .nav-next {
     float: right;
     text-align: right;
     width: 50%;
+    margin-right: 7%;
+    &:after {
+      content:' →';
+    }
   }
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
 }
 
 @import "../../../components/social-menu/social-menu";

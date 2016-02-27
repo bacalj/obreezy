@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Theme Name: obreezy
 Theme URI: http://components.underscores.me/
@@ -603,14 +604,30 @@ a {
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
-  width: 50%; }
+  width: 50%;
+  margin-left: 7%; }
+  .comment-navigation .nav-previous:before,
+  .posts-navigation .nav-previous:before,
+  .post-navigation .nav-previous:before {
+    content: '← '; }
 
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
   float: right;
   text-align: right;
-  width: 50%; }
+  width: 50%;
+  margin-right: 7%; }
+  .comment-navigation .nav-next:after,
+  .posts-navigation .nav-next:after,
+  .post-navigation .nav-next:after {
+    content: ' →'; }
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none; }
 
 .social-navigation ul {
   display: block;
@@ -960,7 +977,8 @@ body.admin-bar button.menu-toggle {
 .site-header {
   background-color: #bbb; }
 
-h1.site-title {
+h1.site-title,
+div#comments {
   margin: 0 auto;
   width: 90%; }
 
