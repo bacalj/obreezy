@@ -65,7 +65,7 @@ function obreezy_entry_footer() {
 		echo '</span>';
 	}
 
-	edit_post_link( esc_html__( 'Edit', 'obreezy' ), '<span class="edit-link">', '</span>' );
+	//edit_post_link( esc_html__( 'Edit', 'obreezy' ), '<span class="edit-link">', '</span>' );
 }
 endif;
 
