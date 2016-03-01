@@ -30,24 +30,31 @@ body.blog {
 		margin:0 auto;
 	}
 	article {
-		//background-color: green;
-		border:1px dotted orange;
+		//border:1px solid red;
 		margin:1%;
-		padding:10px;
-		width: 29%;
+		//padding:6px;
+		width: 47%;
 		display: inline-block;
 		float:left;
 		height:200px;
 
+		@media (max-width: 918px) {
+			width:100%;
+		}
+
 		.thumbnail-wrap {
 			float:left;
-			width:35%;
+			//border:1px dotted orange;
+			padding:5px 17px;
 		}
 
 		.content-wrap {
-			float:right;
-			width:65%;
-			padding: 8px 0px 0px 10px;
+			//float:right;
+			padding:10px;
+			.entry-title {
+				font-weight: bold;
+				text-decoration-style: none;
+			}
 		}
 
 		img.wp-post-image {
