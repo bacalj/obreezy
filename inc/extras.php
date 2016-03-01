@@ -19,6 +19,17 @@ function obreezy_body_classes( $classes ) {
 		$classes[] = 'group-blog';
 	}
 
+	if ( is_archive() ) {
+		$classes[] = 'archive-view';
+	}
+
+
+
 	return $classes;
 }
 add_filter( 'body_class', 'obreezy_body_classes' );
+
+function custom_excerpt_length( $length ) {
+	return 15;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );

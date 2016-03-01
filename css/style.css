@@ -1050,6 +1050,33 @@ h1.site-title {
   margin-top: 10px;
   margin-bottom: 10px; }
 
+body.archive-view #content,
+body.blog #content {
+  width: 90%;
+  margin: 0 auto; }
+
+body.archive-view article,
+body.blog article {
+  border: 1px dotted orange;
+  margin: 1%;
+  padding: 10px;
+  width: 29%;
+  display: inline-block;
+  float: left;
+  height: 200px; }
+  body.archive-view article .thumbnail-wrap,
+  body.blog article .thumbnail-wrap {
+    float: left;
+    width: 35%; }
+  body.archive-view article .content-wrap,
+  body.blog article .content-wrap {
+    float: right;
+    width: 65%;
+    padding: 8px 0px 0px 10px; }
+  body.archive-view article img.wp-post-image,
+  body.blog article img.wp-post-image {
+    float: left; }
+
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/

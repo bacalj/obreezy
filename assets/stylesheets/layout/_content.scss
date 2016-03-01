@@ -21,3 +21,37 @@
 		margin-bottom: 10px;
 	}
 }
+
+body.archive-view,
+body.blog {
+
+	#content {
+		width:90%;
+		margin:0 auto;
+	}
+	article {
+		//background-color: green;
+		border:1px dotted orange;
+		margin:1%;
+		padding:10px;
+		width: 29%;
+		display: inline-block;
+		float:left;
+		height:200px;
+
+		.thumbnail-wrap {
+			float:left;
+			width:35%;
+		}
+
+		.content-wrap {
+			float:right;
+			width:65%;
+			padding: 8px 0px 0px 10px;
+		}
+
+		img.wp-post-image {
+			float:left;
+		}
+	}
+}
