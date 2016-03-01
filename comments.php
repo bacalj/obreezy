@@ -18,6 +18,8 @@ if ( post_password_required() ) {
 }
 ?>
 
+<div class="comment-toggle">Toggle Comments</div>
+
 <div id="comments" class="comments-area" style="display:none;">
 
 	<?php // You can start editing here -- including this comment! ?>

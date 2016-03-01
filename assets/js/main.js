@@ -116,12 +116,18 @@
 			slideMenu.removeClass( 'expanded' ).resize();
 
 			if( slideMenu.hasClass( 'expanded' ) ) {
-							actionText.text( 'hide' );
+							actionText.text( 'hide navigation' );
 					} else {
-						actionText.text( 'show' );
+						actionText.text( 'show navigation' );
 					}
 		}
 	} );
+
+	function commentToggle(){
+		$('.comment-toggle').click(function(){
+			$('#comments').slideToggle('fast');
+		});
+	}
 
 	/**
 	* Loader for all the theme functions: props to Resonar for resizing
@@ -137,6 +143,7 @@
 		fullscreenFeaturedImage();
 		bigImageClass();
 		slideControl();
+		commentToggle();
 	} );
 
 } )( jQuery );

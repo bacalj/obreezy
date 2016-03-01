@@ -43,6 +43,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   ## Captions
   ## Galleries
 --------------------------------------------------------------*/
+/* custom kulers */
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -791,7 +792,7 @@ button.menu-toggle {
   left: auto;
   right: 0;
   text-transform: uppercase;
-  top: 0;
+  top: 8px;
   z-index: 3; }
 
 body.admin-bar button.menu-toggle {
@@ -804,10 +805,17 @@ body.admin-bar button.menu-toggle {
   padding: 60px 10px 5px;
   position: relative;
   width: 100%;
-  z-index: 2; }
+  z-index: 2;
+  background-color: #555; }
 
 .slide-panel.expanded {
-  display: block; }
+  display: block;
+  padding: 100px; }
+  .slide-panel.expanded h1, .slide-panel.expanded h2, .slide-panel.expanded h3, .slide-panel.expanded h4, .slide-panel.expanded h5, .slide-panel.expanded h6, .slide-panel.expanded p, .slide-panel.expanded li, .slide-panel.expanded a {
+    color: #ccc; }
+  .slide-panel.expanded li {
+    list-style: none;
+    display: inline-block; }
 
 .slide-panel::-webkit-scrollbar, .slide-panel::-webkit-scrollbar-corner {
   background-color: #ccc;
@@ -974,12 +982,17 @@ body.admin-bar button.menu-toggle {
   margin: 0 auto;
   width: 100%; }
 
-.site-header {
-  background-color: #bbb; }
+#masthead {
+  border-bottom: 3px solid silver; }
 
 h1.site-title {
   margin: 0 auto;
+  margin-bottom: 8px;
+  margin-top: 6px;
+  font-size: 2.241em;
   width: 90%; }
+  h1.site-title a {
+    text-decoration: none; }
 
 .content-area {
   float: none;
@@ -1000,12 +1013,19 @@ h1.site-title {
     margin: 0 auto;
     width: 90%;
     text-align: right;
-    color: #ccc; }
+    color: #ddd; }
+
+.comment-toggle {
+  border: 2px solid #ddd;
+  border-radius: 3px;
+  width: 200px;
+  margin: 0 auto;
+  text-align: center; }
 
 #comments {
   border-top: 2px solid silver;
   margin-top: 20px;
-  padding-top: 20px;
+  padding: 40px;
   background-color: #ddd; }
 
 /*--------------------------------------------------------------
@@ -1025,6 +1045,10 @@ h1.site-title {
   overflow: hidden;
   position: relative;
   width: 100%; }
+
+.entry-content img {
+  margin-top: 10px;
+  margin-bottom: 10px; }
 
 /*--------------------------------------------------------------
 # Infinite scroll
@@ -1072,6 +1096,9 @@ object {
 .wp-caption-text {
   text-align: center; }
 
+.width-full {
+  width: 100%; }
+
 /*--------------------------------------------------------------
 ## Galleries
 --------------------------------------------------------------*/
@@ -1114,7 +1141,7 @@ button.menu-toggle {
   left: auto;
   right: 0;
   text-transform: uppercase;
-  top: 0;
+  top: 8px;
   z-index: 3; }
 
 body.admin-bar button.menu-toggle {
@@ -1127,10 +1154,17 @@ body.admin-bar button.menu-toggle {
   padding: 60px 10px 5px;
   position: relative;
   width: 100%;
-  z-index: 2; }
+  z-index: 2;
+  background-color: #555; }
 
 .slide-panel.expanded {
-  display: block; }
+  display: block;
+  padding: 100px; }
+  .slide-panel.expanded h1, .slide-panel.expanded h2, .slide-panel.expanded h3, .slide-panel.expanded h4, .slide-panel.expanded h5, .slide-panel.expanded h6, .slide-panel.expanded p, .slide-panel.expanded li, .slide-panel.expanded a {
+    color: #ccc; }
+  .slide-panel.expanded li {
+    list-style: none;
+    display: inline-block; }
 
 .slide-panel::-webkit-scrollbar, .slide-panel::-webkit-scrollbar-corner {
   background-color: #ccc;
