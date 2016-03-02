@@ -18,7 +18,7 @@ if ( post_password_required() ) {
 }
 ?>
 
-<div class="comment-toggle">Toggle Comments</div>
+<div class="comment-toggle comment-top">Show Comments</div>
 
 <div id="comments" class="comments-area" style="display:none;">
 
@@ -44,5 +44,7 @@ if ( post_password_required() ) {
 	<?php endif; ?>
 
 	<?php comment_form(); ?>
+
+<div class="comment-toggle">Hide Comments</div>
 
 </div><!-- #comments -->

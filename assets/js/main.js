@@ -125,8 +125,18 @@
 
 	function commentToggle(){
 		$('.comment-toggle').click(function(){
+			var toggleText = $('#comments').is(':visible') ? 'Show Comments' : 'Hide Comments';
+			$('.comment-toggle').text(toggleText);
 			$('#comments').slideToggle('fast');
 			$("html, body").animate({ scrollTop: $(document).height() }, "slow");
+
+			//annoying empty lines showing up in comment area
+			if ($('#comments').is(':visible')) {
+				$('.comment-content').html(function(i,h){
+						console.log(i,h);
+						return h.replace(/&nbsp;/g,'');
+				});
+			}
  			return false;
 		});
 	}

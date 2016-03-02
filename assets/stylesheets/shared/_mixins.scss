@@ -21,3 +21,18 @@
 @mixin clearfix-after() {
 	clear: both;
 }
+
+@mixin obreezy-button() {
+	border:2px solid #ddd;
+	border-radius: 3px;
+	margin:20px auto;
+	text-align: center;
+	padding:10px;
+	border:2px solid silver;
+	background-color: $color__background-body;
+	border-radius: 2px;
+	&:hover {
+		background-color: $color__mid-grey;
+		color:black;
+	}
+}

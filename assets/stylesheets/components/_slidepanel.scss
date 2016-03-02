@@ -44,14 +44,7 @@ body.admin-bar button.menu-toggle {
     display:inline-block;
 
     a {
-      padding:20px;
-      border:2px solid silver;
-      background-color: $color__background-body;
-      border-radius: 2px;
-      &:hover {
-        background-color: $color__mid-grey;
-        color:black;
-      }
+      @include obreezy-button;
     }
   }
 

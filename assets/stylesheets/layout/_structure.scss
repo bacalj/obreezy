@@ -48,11 +48,8 @@ h1.site-title {
 }
 
 .comment-toggle {
-  border:2px solid #ddd;
-  border-radius: 3px;
+  @include obreezy-button;
   width:200px;
-  margin:0 auto;
-  text-align: center;
 }
 
 #comments {
@@ -60,4 +57,35 @@ h1.site-title {
   margin-top: 20px;
   padding:40px;
   background-color:#ddd;
+
+  .comment-body {
+    margin-top:34px;
+
+    .reply {
+      margin-top:8px;
+      float:right;
+      a {
+        color: #777;
+      }
+    }
+
+    a.comment-reply-link {
+      @include obreezy-button;
+      padding:6px;
+    }
+
+    .comment-metadata time {
+      color:silver;
+      font-weight: light;
+      font-style: italic;
+    }
+  }
+
+  .comment-content {
+    background-color:#fff;
+    padding:10px;
+    p {
+      margin-bottom:5px;
+    }
+  }
 }

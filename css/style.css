@@ -824,7 +824,11 @@ body.admin-bar button.menu-toggle {
     list-style: none;
     display: inline-block; }
     .slide-panel.expanded li a {
-      padding: 20px;
+      border: 2px solid #ddd;
+      border-radius: 3px;
+      margin: 20px auto;
+      text-align: center;
+      padding: 10px;
       border: 2px solid silver;
       background-color: #fff;
       border-radius: 2px; }
@@ -1043,20 +1047,61 @@ h1.site-title {
 .comment-toggle {
   border: 2px solid #ddd;
   border-radius: 3px;
-  width: 200px;
-  margin: 0 auto;
-  text-align: center; }
+  margin: 20px auto;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid silver;
+  background-color: #fff;
+  border-radius: 2px;
+  width: 200px; }
+  .comment-toggle:hover {
+    background-color: #ccc;
+    color: black; }
 
 #comments {
   border-top: 2px solid silver;
   margin-top: 20px;
   padding: 40px;
   background-color: #ddd; }
+  #comments .comment-body {
+    margin-top: 34px; }
+    #comments .comment-body .reply {
+      margin-top: 8px;
+      float: right; }
+      #comments .comment-body .reply a {
+        color: #777; }
+    #comments .comment-body a.comment-reply-link {
+      border: 2px solid #ddd;
+      border-radius: 3px;
+      margin: 20px auto;
+      text-align: center;
+      padding: 10px;
+      border: 2px solid silver;
+      background-color: #fff;
+      border-radius: 2px;
+      padding: 6px; }
+      #comments .comment-body a.comment-reply-link:hover {
+        background-color: #ccc;
+        color: black; }
+    #comments .comment-body .comment-metadata time {
+      color: silver;
+      font-weight: light;
+      font-style: italic; }
+  #comments .comment-content {
+    background-color: #fff;
+    padding: 10px; }
+    #comments .comment-content p {
+      margin-bottom: 5px; }
 
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
 .entry-wrapper {
+  display: block;
+  margin: 0 auto;
+  width: 90%; }
+
+.page-header {
   display: block;
   margin: 0 auto;
   width: 90%; }
@@ -1226,7 +1271,11 @@ body.admin-bar button.menu-toggle {
     list-style: none;
     display: inline-block; }
     .slide-panel.expanded li a {
-      padding: 20px;
+      border: 2px solid #ddd;
+      border-radius: 3px;
+      margin: 20px auto;
+      text-align: center;
+      padding: 10px;
       border: 2px solid silver;
       background-color: #fff;
       border-radius: 2px; }
