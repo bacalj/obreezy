@@ -28,7 +28,7 @@
 		</div><!-- .entry-content -->
 
 		<footer class="entry-footer">
-			<?php obreezy_entry_footer(); ?>
+			<?php //obreezy_entry_footer(); ?>
 		</footer><!-- .entry-footer -->
 	</div>
 </article><!-- #post-## -->

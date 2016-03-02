@@ -75,7 +75,7 @@
 			if( slideMenu.hasClass( 'expanded' ) ) {
 							actionText.text( 'hide' );
 					} else {
-						actionText.text( 'show' );
+						actionText.text( 'menu' );
 					}
 
 			//Close slide menu with double click
@@ -126,6 +126,8 @@
 	function commentToggle(){
 		$('.comment-toggle').click(function(){
 			$('#comments').slideToggle('fast');
+			$("html, body").animate({ scrollTop: $(document).height() }, "slow");
+ 			return false;
 		});
 	}
 

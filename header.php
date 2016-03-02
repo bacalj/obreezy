@@ -26,7 +26,7 @@
 	<header id="masthead" class="site-header" role="banner">
 
 		<?php if ( is_active_sidebar( 'sidebar-1' ) || has_nav_menu( 'top-menu' ) || has_nav_menu ( 'social' ) ) : ?>
-			<button class="menu-toggle animated" aria-expanded="false" ><span class="screen-reader-text"><?php _e( 'Show', 'obreezy' ); ?></span><span class="action-text"><?php _e( 'Show', 'obreezy' ); ?></span></button>
+			<button class="menu-toggle animated" aria-expanded="false" ><span class="screen-reader-text"><?php _e( 'Menu', 'obreezy' ); ?></span><span class="action-text"><?php _e( 'Menu', 'obreezy' ); ?></span></button>
 			<div class="slide-panel animated closed">
 				<?php obreezy_social_menu(); ?>
 

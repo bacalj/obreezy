@@ -806,7 +806,7 @@ body.admin-bar button.menu-toggle {
   background-color: #f4f4f4;
   display: none;
   overflow-x: hidden;
-  padding: 60px 10px 5px;
+  padding: 60px;
   position: relative;
   width: 100%;
   z-index: 2;
@@ -814,12 +814,28 @@ body.admin-bar button.menu-toggle {
 
 .slide-panel.expanded {
   display: block;
-  padding: 100px; }
-  .slide-panel.expanded h1, .slide-panel.expanded h2, .slide-panel.expanded h3, .slide-panel.expanded h4, .slide-panel.expanded h5, .slide-panel.expanded h6, .slide-panel.expanded p, .slide-panel.expanded li, .slide-panel.expanded a {
-    color: #ccc; }
+  opacity: 0.95; }
+  .slide-panel.expanded h1, .slide-panel.expanded h2, .slide-panel.expanded h3, .slide-panel.expanded h4, .slide-panel.expanded h5, .slide-panel.expanded h6, .slide-panel.expanded p, .slide-panel.expanded li {
+    color: #f4f4f4; }
+  .slide-panel.expanded ul {
+    margin-left: 0px;
+    padding-left: 0px; }
   .slide-panel.expanded li {
     list-style: none;
     display: inline-block; }
+    .slide-panel.expanded li a {
+      padding: 20px;
+      border: 2px solid silver;
+      background-color: #fff;
+      border-radius: 2px; }
+      .slide-panel.expanded li a:hover {
+        background-color: #ccc;
+        color: black; }
+  .slide-panel.expanded #secondary {
+    width: 80%;
+    margin: 0 auto; }
+  .slide-panel.expanded .widget {
+    padding: 20px; }
 
 .slide-panel::-webkit-scrollbar, .slide-panel::-webkit-scrollbar-corner {
   background-color: #ccc;
@@ -836,7 +852,8 @@ body.admin-bar button.menu-toggle {
 .menu-toggle.toggle-on {
   -webkit-animation-name: none;
   animation-name: none;
-  z-index: 3; }
+  z-index: 3;
+  margin-right: 10px; }
 
 .menu-toggle .genericon {
   margin-right: 20px; }
@@ -855,7 +872,8 @@ body.admin-bar button.menu-toggle {
   z-index: 2; }
 
 .action-text {
-  font-size: 1.115em; }
+  font-size: 1.115em;
+  text-shadow: none; }
 
 .action-text:before {
   content: "\f419";
@@ -875,7 +893,8 @@ body.admin-bar button.menu-toggle {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   speak: none;
-  vertical-align: top; }
+  vertical-align: top;
+  margin-top: -1px; }
 
 .toggle-on .action-text {
   color: #222; }
@@ -987,7 +1006,9 @@ body.admin-bar button.menu-toggle {
   width: 100%; }
 
 #masthead {
-  border-bottom: 3px solid silver; }
+  margin-bottom: 20px;
+  background-color: #d6d6d6;
+  box-shadow: 0px 5px 5px #aaa; }
 
 h1.site-title {
   margin: 0 auto;
@@ -1080,7 +1101,8 @@ body.blog article {
     body.archive-view article .content-wrap .entry-title,
     body.blog article .content-wrap .entry-title {
       font-weight: bold;
-      text-decoration-style: none; }
+      text-decoration-style: none;
+      font-size: 22px; }
   body.archive-view article img.wp-post-image,
   body.blog article img.wp-post-image {
     float: left; }
@@ -1186,7 +1208,7 @@ body.admin-bar button.menu-toggle {
   background-color: #f4f4f4;
   display: none;
   overflow-x: hidden;
-  padding: 60px 10px 5px;
+  padding: 60px;
   position: relative;
   width: 100%;
   z-index: 2;
@@ -1194,12 +1216,28 @@ body.admin-bar button.menu-toggle {
 
 .slide-panel.expanded {
   display: block;
-  padding: 100px; }
-  .slide-panel.expanded h1, .slide-panel.expanded h2, .slide-panel.expanded h3, .slide-panel.expanded h4, .slide-panel.expanded h5, .slide-panel.expanded h6, .slide-panel.expanded p, .slide-panel.expanded li, .slide-panel.expanded a {
-    color: #ccc; }
+  opacity: 0.95; }
+  .slide-panel.expanded h1, .slide-panel.expanded h2, .slide-panel.expanded h3, .slide-panel.expanded h4, .slide-panel.expanded h5, .slide-panel.expanded h6, .slide-panel.expanded p, .slide-panel.expanded li {
+    color: #f4f4f4; }
+  .slide-panel.expanded ul {
+    margin-left: 0px;
+    padding-left: 0px; }
   .slide-panel.expanded li {
     list-style: none;
     display: inline-block; }
+    .slide-panel.expanded li a {
+      padding: 20px;
+      border: 2px solid silver;
+      background-color: #fff;
+      border-radius: 2px; }
+      .slide-panel.expanded li a:hover {
+        background-color: #ccc;
+        color: black; }
+  .slide-panel.expanded #secondary {
+    width: 80%;
+    margin: 0 auto; }
+  .slide-panel.expanded .widget {
+    padding: 20px; }
 
 .slide-panel::-webkit-scrollbar, .slide-panel::-webkit-scrollbar-corner {
   background-color: #ccc;
@@ -1216,7 +1254,8 @@ body.admin-bar button.menu-toggle {
 .menu-toggle.toggle-on {
   -webkit-animation-name: none;
   animation-name: none;
-  z-index: 3; }
+  z-index: 3;
+  margin-right: 10px; }
 
 .menu-toggle .genericon {
   margin-right: 20px; }
@@ -1235,7 +1274,8 @@ body.admin-bar button.menu-toggle {
   z-index: 2; }
 
 .action-text {
-  font-size: 1.115em; }
+  font-size: 1.115em;
+  text-shadow: none; }
 
 .action-text:before {
   content: "\f419";
@@ -1255,7 +1295,8 @@ body.admin-bar button.menu-toggle {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   speak: none;
-  vertical-align: top; }
+  vertical-align: top;
+  margin-top: -1px; }
 
 .toggle-on .action-text {
   color: #222; }

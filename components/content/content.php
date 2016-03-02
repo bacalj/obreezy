@@ -15,7 +15,9 @@
 
 	<div class="entry-content">
 		<div class="thumbnail-wrap">
-			<?php the_post_thumbnail('thumbnail'); ?>
+			<a href="<?php the_permalink(); ?>">
+				<?php the_post_thumbnail('thumbnail'); ?>
+			</a>
 		</div>
 
 		<div class="content-wrap">
@@ -34,7 +36,7 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php obreezy_entry_footer(); ?>
+		<?php //obreezy_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 	</div>
 </article><!-- #post-## -->
