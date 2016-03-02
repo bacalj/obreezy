@@ -1,7 +1,7 @@
 === obreezy ===
 
-Contributors: automattic
-Tags: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments
+Contributors: Joe Bacal, based on the new underscores.me components thing from automattic
+Tags: in-progress
 
 Requires at least: 4.0
 Tested up to: 4.2.2
@@ -17,9 +17,9 @@ A theme for large pictures in the content area
 
 == Installation ==
 
-1. In your admin panel, go to Appearance > Themes and click the Add New button.
-2. Click Upload and Choose File, then select the theme's .zip file. Click Install Now.
-3. Click Activate to use your new theme right away.
+```npm install
+gulp```
+
 
 == Frequently Asked Questions ==
 
