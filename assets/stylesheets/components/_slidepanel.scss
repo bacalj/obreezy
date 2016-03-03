@@ -42,6 +42,7 @@ body.admin-bar button.menu-toggle {
   li {
     list-style: none;
     display:inline-block;
+    margin-top:23px;
 
     a {
       @include obreezy-button;
