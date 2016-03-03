@@ -21,7 +21,7 @@
 			<?php the_content(); ?>
 
 			<hr>
-			<?php $posts = get_field('relationship_field');
+			<?php $posts = get_field('related_posts');
 			if( $posts ): ?>
 			<h3>Related Posts</h3>
 				<ul>
