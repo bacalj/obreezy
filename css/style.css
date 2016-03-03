@@ -430,7 +430,7 @@ blockquote, q {
     content: ""; }
 
 hr {
-  background-color: #f4f4f4;
+  background-color: #ccc;
   border: 0;
   height: 1px;
   margin-bottom: 1.5em; }
@@ -1044,6 +1044,9 @@ h1.site-title {
     text-align: right;
     color: #ddd; }
 
+.comment-toggle-wrap {
+  background-color: #ccc; }
+
 .comment-toggle {
   border: 2px solid #ddd;
   border-radius: 3px;
@@ -1092,6 +1095,10 @@ h1.site-title {
     padding: 10px; }
     #comments .comment-content p {
       margin-bottom: 5px; }
+
+.clearfix hr {
+  display: block;
+  clear: both; }
 
 /*--------------------------------------------------------------
 # Content
@@ -1151,6 +1158,21 @@ body.blog article {
   body.archive-view article img.wp-post-image,
   body.blog article img.wp-post-image {
     float: left; }
+
+.obreezy-related-post {
+  text-align: center;
+  float: left;
+  width: 22%;
+  height: 230px;
+  display: inline-block; }
+  .obreezy-related-post img {
+    margin-bottom: 0px; }
+  .obreezy-related-post .related-title {
+    margin-bottom: 15px; }
+  @media (max-width: 720px) {
+    .obreezy-related-post {
+      width: 100%;
+      height: auto; } }
 
 /*--------------------------------------------------------------
 # Infinite scroll

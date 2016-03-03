@@ -47,6 +47,10 @@ h1.site-title {
   }
 }
 
+.comment-toggle-wrap {
+  background-color:$color__mid-grey;
+}
+
 .comment-toggle {
   @include obreezy-button;
   width:200px;
@@ -87,5 +91,12 @@ h1.site-title {
     p {
       margin-bottom:5px;
     }
+  }
+}
+
+.clearfix {
+  hr {
+    display:block;
+    clear:both;
   }
 }

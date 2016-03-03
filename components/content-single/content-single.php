@@ -20,18 +20,26 @@
 		<div class="entry-content">
 			<?php the_content(); ?>
 
+			<hr>
 			<?php $posts = get_field('relationship_field');
-
 			if( $posts ): ?>
+			<h3>Related Posts</h3>
 				<ul>
 					<?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
 							<div class="obreezy-related-post">
 								<a href="<?php echo get_permalink( $p ); ?>">
-									<?php echo get_the_title( $p ); ?>
+									<?php $imgurl = wp_get_attachment_image_src( get_post_thumbnail_id($p), 'thumbnail'); ?>
+									<img src="<?php echo $imgurl[0]; ?>" alt="image"/>
+									<div class="related-title">
+										<?php echo get_the_title( $p ); ?>
+									</div>
 								</a>
 							</div>
 					<?php endforeach; ?>
 				</ul>
+				<div class="clearfix">
+					<hr>
+				</div>
 			<?php endif; ?>
 
 			<?php
