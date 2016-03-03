@@ -19,6 +19,21 @@
 
 		<div class="entry-content">
 			<?php the_content(); ?>
+
+			<?php $posts = get_field('relationship_field');
+
+			if( $posts ): ?>
+				<ul>
+					<?php foreach( $posts as $p ): // variable must NOT be called $post (IMPORTANT) ?>
+							<div class="obreezy-related-post">
+								<a href="<?php echo get_permalink( $p ); ?>">
+									<?php echo get_the_title( $p ); ?>
+								</a>
+							</div>
+					<?php endforeach; ?>
+				</ul>
+			<?php endif; ?>
+
 			<?php
 				wp_link_pages( array(
 					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'obreezy' ),
