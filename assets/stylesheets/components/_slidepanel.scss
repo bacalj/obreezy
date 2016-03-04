@@ -14,7 +14,10 @@ button.menu-toggle {
 }
 
 body.admin-bar button.menu-toggle {
-  top: 45px;
+  top: 39px;
+  @media (max-width:782px){
+    top:53px;
+  }
 }
 .slide-panel {
   background-color: $color__light-grey;
