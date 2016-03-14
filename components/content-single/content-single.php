@@ -15,6 +15,9 @@
 		</div>--><!-- .entry-meta -->
 		<header class="entry-header">
 			<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+			<?php $author = get_the_author(); ?>
+			<p><?php echo 'By ' . $author; ?>
+			</p>
 		</header><!-- .entry-header -->
 
 		<div class="entry-content">
