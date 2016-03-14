@@ -19,7 +19,7 @@
 			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		</header><!-- .entry-header -->
 
-		<div class="entry-content">
+		<div class="entry-content entry-content-page">
 			<?php the_content(); ?>
 			<?php
 				wp_link_pages( array(
