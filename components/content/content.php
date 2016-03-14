@@ -23,7 +23,7 @@
 		<div class="content-wrap">
 			<?php
 				the_title( sprintf( '<div class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></div>' );
-				the_excerpt();
+				//the_excerpt();
 			 ?>
 		</div>
 

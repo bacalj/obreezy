@@ -39,33 +39,34 @@ body.blog {
 		//border:1px solid red;
 		margin:1%;
 		//padding:6px;
-		width: 47%;
+		width: 30%;
 		display: inline-block;
 		float:left;
-		height:200px;
+		height:260px;
+		text-align:center;
 
 		@media (max-width: 918px) {
 			width:100%;
 		}
 
 		.thumbnail-wrap {
-			float:left;
+			//float:left;
 			//border:1px dotted orange;
 			padding:5px 17px;
 		}
 
 		.content-wrap {
 			//float:right;
-			padding:10px;
+			//padding:10px;
 			.entry-title {
 				font-weight: bold;
 				text-decoration-style: none;
-				font-size: 22px;
+				font-size: 20px;
 			}
 		}
 
 		img.wp-post-image {
-			float:left;
+			//float:left;
 		}
 	}
 }

@@ -1138,29 +1138,23 @@ body.blog #content {
 body.archive-view article,
 body.blog article {
   margin: 1%;
-  width: 47%;
+  width: 30%;
   display: inline-block;
   float: left;
-  height: 200px; }
+  height: 260px;
+  text-align: center; }
   @media (max-width: 918px) {
     body.archive-view article,
     body.blog article {
       width: 100%; } }
   body.archive-view article .thumbnail-wrap,
   body.blog article .thumbnail-wrap {
-    float: left;
     padding: 5px 17px; }
-  body.archive-view article .content-wrap,
-  body.blog article .content-wrap {
-    padding: 10px; }
-    body.archive-view article .content-wrap .entry-title,
-    body.blog article .content-wrap .entry-title {
-      font-weight: bold;
-      text-decoration-style: none;
-      font-size: 22px; }
-  body.archive-view article img.wp-post-image,
-  body.blog article img.wp-post-image {
-    float: left; }
+  body.archive-view article .content-wrap .entry-title,
+  body.blog article .content-wrap .entry-title {
+    font-weight: bold;
+    text-decoration-style: none;
+    font-size: 20px; }
 
 .obreezy-related-post {
   text-align: center;
