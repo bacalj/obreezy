@@ -20,7 +20,16 @@
 			</p>
 		</header><!-- .entry-header -->
 
-		<div class="entry-content">
+		<?php
+			$annotate = get_field('allow_image_annotation');
+			if ($annotate == true) {
+				$annotate_class = 'img-annotation-wrap';
+			} else {
+				$annotate_class = '';
+			}
+		 ?>
+
+		<div class="entry-content <?php echo $annotate_class; ?>">
 			<?php the_content(); ?>
 
 			<hr>
